@@ -1,30 +1,34 @@
-# Automated Github Organization (and Team) Invites
-[![Code Climate](https://codeclimate.com/github/thundergolfer/automated-github-organization-invites/badges/gpa.svg)](https://codeclimate.com/github/thundergolfer/automated-github-organization-invites) [![Issue Count](https://codeclimate.com/github/thundergolfer/automated-github-organization-invites/badges/issue_count.svg)](https://codeclimate.com/github/thundergolfer/automated-github-organization-invites)
+# 自动化的Github组织（和团队）邀请函
 
-> Quickly host a webpage to allow people to click and receive an invite to your Github Organization and an (optional) default team.
+[![代码气候](https://codeclimate.com/github/tiddly-gittly/automated-github-organization-invites/badges/gpa.svg)](https://codeclimate.com/github/tiddly-gittly/automated-github-organization-invites) [![问题数](https://codeclimate.com/github/tiddly-gittly/automated-github-organization-invites/badges/issue_count.svg)](https://codeclimate.com/github/tiddly-gittly/automated-github-organization-invites)
+
+> 快速部署一个网页，让人们点击并接受邀请加入你的Github组织和一个（可选）默认团队。
 
 <p align="center">
   <img src="auto-invites-example-ui.png"/>
 </p>
 
-### Features
+### 特点
 
-* Validates submitted Github usernames
-* Links in your Github Organization's avatar/image
-* Lightweight
-* Optionally auto-invite to a team inside the organization
+* 验证提交的Github用户名
+* 在您的Github组织的头像/图像中的链接
+* 轻量级
+* 可选择自动邀请组织内的一个团队
 
-### Get It Right Now
+### 现在就获取它
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![部署](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-All you have to do is
+你所要做的就是
 
-1. Click **Deploy to Heroku**
-2. Fill in the **Environment Variables** when prompted. These will be a *[Github Access Token](https://github.com/blog/1509-personal-api-tokens)*, which should have Organization privileges enabled, and a *GitHub Organization name*, and a *background color*. The choices are `{blue,green,grey,pink,red,white}`. If you don't enter one of those strings it defaults to 'white'. Lastly an optional *GitHub Organization team* can also be specified if you want your users to auto-join a default team.
+1. 点击**上面的按钮部署到Heroku**。
+2. 在提示时填写**环境变量**。
 
-#### All Done! Just share the Heroku App's URL to people and they'll be able to get themselves an invite to your organisation.
+- 包含一个*[Github Access Token](https://github.com/blog/1509-personal-api-tokens)*（它应该启用组织权限）
+- 以及一个*GitHub组织名称*，
+- 可以选择*背景颜色*。可选项是 `{blue,green,grey,pink,red,white}` 。如果你留空，它默认为'白色'。最后，如果你想让你的用户自动加入一个默认的团队，还可以指定一个可选的*GitHub组织团队*。
 
+#### 全部完成! 只要把Heroku应用程序的URL分享给别人，他们就能得到你的组织的邀请。
 ### Development
 
 **Install:** 
@@ -41,4 +45,10 @@ ORGANIZATION_NAME="foo" GITHUB_TOKEN="bar"  bundle exec ruby web_app.rb
 
 ### Credit 
 
-Thanks to *[Code, Applied To Life](https://medium.com/code-applied-to-life/automated-github-organization-invites-3e940aa27040#.sikfvzyaj)* for their efforts which were used as a base for this.
+### 感谢
+
+感谢*[Code, Applied To Life](https://medium.com/code-applied-to-life/automated-github-organization-invites-3e940aa27040#.sikfvzyaj)*的努力，他们的努力被用作本文的基础。
+
+以及 [FernandaOchoa](https://github.com/FernandaOchoa/automated-github-organization-invites) 对本应用的修复工作。
+
+通过www.DeepL.com/Translator（免费版）翻译
