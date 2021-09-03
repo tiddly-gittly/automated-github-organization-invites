@@ -81,18 +81,18 @@ end
 def add_user_to_org(client, username)
   begin
     client.update_organization_membership(ORG_NAME, :user => params["github-user"])
-    "Sent invite to join '#{ORG_NAME}', Check your EMAIL"
+    "已发送加入 '#{ORG_NAME}' 的确认链接，请查看你的邮箱。"
   rescue Octokit::ClientError => e
-    "Error: #{e.class}. #{e.message}"
+    "未找到该用户，请检查用户名。: #{e.class}. #{e.message}"
   end
 end
 
 def add_user_to_team_in_org(client, username, team_id)
   begin
     client.add_team_membership(team_id, username)
-    "Sent invite to join '#{ORG_NAME}' and team '#{TEAM_NAME}', Check your EMAIL"
+    "已发送加入 '#{ORG_NAME}' 的 '#{TEAM_NAME}' 的确认链接，请查看你的邮箱。"
   rescue Octokit::ClientError => e
-    "Error: #{e.class}. #{e.message}"
+    "未找到该用户，请检查用户名: #{e.class}. #{e.message}"
   end
 end
 
