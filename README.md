@@ -1,7 +1,5 @@
 # 自动化的Github组织（和团队）邀请函
 
-[![代码气候](https://codeclimate.com/github/tiddly-gittly/automated-github-organization-invites/badges/gpa.svg)](https://codeclimate.com/github/tiddly-gittly/automated-github-organization-invites) [![问题数](https://codeclimate.com/github/tiddly-gittly/automated-github-organization-invites/badges/issue_count.svg)](https://codeclimate.com/github/tiddly-gittly/automated-github-organization-invites)
-
 > 快速部署一个网页，让人们点击并接受邀请加入你的Github组织和一个（可选）默认团队。
 
 <p align="center">
